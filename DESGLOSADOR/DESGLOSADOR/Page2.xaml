@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DESGLOSADOR.Page2"
+             Padding="5"
+             NavigationPage.IconColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+
+        <StackLayout Background="#DCF1E6" Padding="0,1">
+            <StackLayout  Background="#92CBCF"   Orientation="Horizontal" >
+
+                <Image
+                    VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                HeightRequest="130"
+                Source="senior.png">
+
+                </Image>
+                <Label 
+                    VerticalOptions="Center"
+             TextColor="Black"
+             FontAttributes="Bold"
+             Text="Ingresa la cantidad" 
+             FontSize="35" 
+             Padding="10"
+             HorizontalOptions="Center"/>
+
+            </StackLayout>
+
+            
+            
+            <StackLayout Padding="85,10,0,0" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+
+
+                <Entry
+            FontAttributes="Bold"
+            TextColor="Black"
+            FontSize="20"
+            PlaceholderColor="Black"
+            x:Name="DATO1"
+            Placeholder="0"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
+            WidthRequest="100"
+            Keyboard="Numeric">
+                </Entry>
+                
+                
+                 <Image
+                   HeightRequest="60"
+                    Source="pika.png">
+                </Image>
+       
+                
+            </StackLayout>
+
+
+                <Button
+                BackgroundColor="#448166"
+                CornerRadius="30"
+                Padding="25"
+                x:Name="Can"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand"
+                Text="CALCULAR "
+                Clicked="calcular">
+
+                </Button>
+
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="#92CBCF" VerticalOptions="Center"  Padding="19,30,0,50">
+
+
+            
+
+                <Label
+                    FontAttributes="Bold"
+                TextColor="Black"
+                VerticalOptions="End"
+                FontSize="18"
+                x:Name="RESULTADO">
+                </Label>
+
+                <StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Padding="0,0,10,0">
+
+                    <Image
+                        HorizontalOptions="EndAndExpand"
+                    HeightRequest="100"
+                    Source="BIL.png">
+                    </Image>
+
+                    <Image
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="EndAndExpand"
+                    HeightRequest="120"
+                    Source="moned.png">
+                    </Image>
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
